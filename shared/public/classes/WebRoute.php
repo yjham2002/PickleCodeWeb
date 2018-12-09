@@ -12,7 +12,7 @@ class WebRoute extends Routable {
     function getCustomerComment(){
         $sql = "SELECT *
                 FROM tblCustomerComment C JOIN tblCustomer CU ON C.customerId=CU.id 
-                ORDER BY C.`regDate` DESC;";
+                ORDER BY C.`regDate` DESC LIMIT 5;";
         return $this->getArray($sql);
     }
 

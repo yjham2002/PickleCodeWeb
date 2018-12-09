@@ -5,6 +5,7 @@ $email = $route->getProperty("WEB_EMAIL");
 $link_fb = $route->getProperty("WEB_FACEBOOK");
 $ports = $route->getPortfolioList();
 $comms = $route->getCustomerComment();
+$hit = $route->getProperty("WEB_HIT");
 ?>
 
 <!DOCTYPE html>
@@ -66,24 +67,25 @@ $comms = $route->getCustomerComment();
                 <li><a class=""  href="notice.php" title="notice">공지사항</a></li>
             </ul>
             <p>
-                아삭하고 맛있는 <a href='#0'>PickleCode</a>.
-                <br/>
-
                 <?
                 if(AuthUtil::isLoggedIn()){
-                    $displayName = 
-                        AuthUtil::getLoggedInfo()->name."(".AuthUtil::getLoggedInfo()->company.")";
+                $displayName =
+                    AuthUtil::getLoggedInfo()->name."(".AuthUtil::getLoggedInfo()->company.")";
                 ?>
-                    <div class="text-right">
-                    <i class="fa fa-user"></i>&nbsp;<a href="profile.php"><?=$displayName?></a> 님<br/>
-                    <a href="#" class="jLogoutNav"><i class="fa fa-sign-out-alt"></i>&nbsp;Logout</a>
+            <div class="text-right">
+                <i class="fa fa-user"></i>&nbsp;<a href="profile.php"><?=$displayName?></a> 님<br/>
+                <a href="#" class="jLogoutNav"><i class="fa fa-sign-out-alt"></i>&nbsp;Logout</a>
                 <?
                 }else{
                 ?>
                 <div class="text-center">
                     <a href="login.php">로그인</a> |
                     <a href="join.php">회원가입</a>
-                <?}?>
+                    <?}?>
+                </div>
+                <br/>
+                <div class="text-center">
+                아삭하고 맛있는 <a href='#0'>PickleCode</a>.
                 </div>
             </p>
             <ul class="header-nav__social">
@@ -101,9 +103,6 @@ $comms = $route->getCustomerComment();
 <!-- Java Script  -->
 <script src="js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/AjaxUtil.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
-
 <script>
     $(document).ready(function(){
         $(".jLogoutNav").click(function(){

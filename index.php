@@ -1,4 +1,8 @@
 <? include_once $_SERVER["DOCUMENT_ROOT"]."/main/inc/header.php"; ?>
+<?
+    $newHit = $hit + 1;
+    $route->setPropertyLoc("WEB_HIT", "#", $newHit);
+?>
 <script>
     $(document).ready(function(){
         if("<?=$_REQUEST["msg"] != ""?>"){
@@ -267,28 +271,29 @@
             </div>
 
             <div class="row testimonials">
-
                 <div class="col-full testimonials__slider">
-
-                    <?foreach ($comms as $item){?>
-                    <div class="testimonials__slide">
-                        <img src="images/user.png" alt="PickleCode Comment" class="testimonials__avatar">
-                        <p><?=$item["content"]?></p>
-                        <div class="testimonials__author">
-                            <?=$item["name"]?>
-                            <span><?=$item["role"]?>, <?=$item["company"]?></span>
+                <?foreach ($comms as $item){?>
+                        <div class="testimonials__slide">
+                            <img src="images/user.png" alt="PickleCode Comment" class="testimonials__avatar">
+                            <p><?=$item["content"]?></p>
+                            <div class="testimonials__author">
+                                <?=$item["name"]?>
+                                <span><?=$item["role"]?>, <?=$item["company"]?></span>
+                            </div>
                         </div>
-                    </div>
-                    <?}?>
+                <?}?>
                 </div> <!-- end testimonials__slider -->
-
             </div> <!-- end testimonials -->
 
         </div> <!-- end testimonials-wrap -->
 
     </section> <!-- end s-works -->
 
-
+<?php
+$end_date = date('2017-12-13');
+$d_day = floor(( strtotime(substr($end_date,0,10)) - strtotime(date('Y-m-d')) )/86400);
+if($d_day < 0) $d_day *= -1;
+?>
     <!-- stats
     ================================================== -->
     <section id="stats" class="s-stats">
@@ -296,20 +301,12 @@
         <div class="row stats block-1-4 block-m-1-2 block-mob-full" >
 
             <div class="col-block stats__col ">
-                <div class="stats__count">129</div>
-                <h5>Awards Received</h5>
+                <div class="stats__count"><?=$hit?></div>
+                <h5>누적 유입수</h5>
             </div>
             <div class="col-block stats__col">
-                <div class="stats__count">1507</div>
-                <h5>Cups of Coffee</h5>
-            </div>
-            <div class="col-block stats__col">
-                <div class="stats__count">108</div>
-                <h5>Projects Completed</h5>
-            </div>
-            <div class="col-block stats__col">
-                <div class="stats__count">103</div>
-                <h5>Happy Clients</h5>
+                <div class="stats__count"><?=$d_day?></div>
+                <h5>업력(일)</h5>
             </div>
 
         </div> <!-- end stats -->

@@ -58,7 +58,8 @@
     </div>
 
 </div> <!-- end photoSwipe background -->
-
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
 <!-- preloader  -->
 <div id="preloader">
     <div id="loader">

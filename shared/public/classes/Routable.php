@@ -48,7 +48,7 @@ class Routable extends Databases {
             ON DUPLICATE KEY UPDATE `value` = '{$value}'
             ";
         $this->update($sql);
-        return $this->makeResultJson(1, "succ");
+        return Routable::response(1, "succ");
     }
 
     function getRecommendation($key, $table, $col, $count = 10){
@@ -120,7 +120,7 @@ class Routable extends Databases {
             $targetDir = $this->filePath . $fName;
             $fileName = $_FILES["docFile"]["name"];
             if(move_uploaded_file($_FILES["docFile"]["tmp_name"], $targetDir)) $filePath = $fName;
-            else return $this->makeResultJson(-1, "fail");
+            else return Routable::response(-1, "failed");
         }
 
         $sql = "INSERT INTO tblDocument(`id`, `adminId`, `title`, `fileName`, `filePath`, `content`, `regDate`)
@@ -142,7 +142,7 @@ class Routable extends Databases {
                   ";
 
         $this->update($sql);
-        return $this->makeResultJson(1, "");
+        return Routable::response(1, "succ");
     }
 
 }
