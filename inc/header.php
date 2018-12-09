@@ -74,6 +74,10 @@ $hit = $route->getProperty("WEB_HIT");
                 ?>
             <div class="text-right">
                 <i class="fa fa-user"></i>&nbsp;<a href="profile.php"><?=$displayName?></a> 님<br/>
+                <?if(AuthUtil::getLoggedInfo()->isAdmin == 1){?>
+                    <br/>
+                    <a href="#" class="jAdmin"><i class="fa fa-desktop"></i>&nbsp;관리자 모드</a>&nbsp;
+                    <?}?>
                 <a href="#" class="jLogoutNav"><i class="fa fa-sign-out-alt"></i>&nbsp;Logout</a>
                 <?
                 }else{
