@@ -4,6 +4,18 @@ include_once $_SERVER["DOCUMENT_ROOT"]."/main/shared/public/classes/Routable.php
 
 class WebRoute extends Routable {
 
+    function saveStatistic(){
+        $userId = AuthUtil::getLoggedInfo()->id == "" ? "0" : AuthUtil::getLoggedInfo()->id;
+        $accessIp = $_SERVER['REMOTE_ADDR'].":".$_SERVER['SERVER_PORT'];
+        $agent = $_SERVER['HTTP_USER_AGENT'];
+        $fbclid = $_REQUEST["fbclid"];
+
+        $ins = "INSERT INTO tblAccessHistory(`userId`, `accessIp`, `fbclid`, `agent`, `regDate`)
+                VALUES ('{$userId}', '{$accessIp}', '{$fbclid}', '{$agent}', NOW())";
+
+        $this->update($ins);
+    }
+
     function getPortfolioList(){
         $sql = "SELECT * FROM tblPortfolio ORDER BY `title` DESC;";
         return $this->getArray($sql);

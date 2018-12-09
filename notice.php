@@ -45,26 +45,12 @@
                 <h3>공지사항</h3>
                 <p>피클코드의 최신 소식을 전해드립니다.</p>
 
-                <div class="table-responsive">
 
-                    <table>
-                        <thead>
-                        <tr>
-                            <th>번호</th>
-                            <th>제목</th>
-                            <th>작성자</th>
-                            <th>조회</th>
-                            <th>등록일시</th>
-                        </tr>
-                        </thead>
-                        <tbody class="jContainer">
-                        </tbody>
-                    </table>
-
+                <div class="jContainer">
                 </div>
 
                 <div class="text-center">
-                <button class="btn btn--stroke jLoadMore" ><i class="fa fa-spinner"></i>더보기</button>
+                <button class="btn btn--stroke jLoadMore" style="margin-top: 20px;" ><i class="fa fa-spinner"></i>더보기</button>
                 </div>
 
             </div>
