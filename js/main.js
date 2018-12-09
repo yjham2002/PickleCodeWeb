@@ -14,6 +14,21 @@
 
     $WIN = $(window);
 
+    $(document).ready(function(){
+        var coll = $(".collapsible");
+        for (var i = 0; i < coll.length; i++){
+            coll[i].addEventListener("click", function(){
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+
+                if (content.style.maxHeight)
+                    content.style.maxHeight = null;
+                else
+                    content.style.maxHeight = content.scrollHeight + "px";
+            });
+        }
+    });
+
     // Add the User Agent to the <html>
     // will be used for IE10 detection (Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0))
     var doc = document.documentElement;

@@ -58,14 +58,14 @@
     ================================================== -->
     <section id='about' class="s-about">
 
-        <div class="row section-header" data-aos="fade-up">
+        <div class="row section-header" >
             <div class="col-full">
                 <h3 class="subhead">피클코드를 소개합니다</h3>
                 <h1 class="display-1">아삭하고 맛있는 코드를 그려내는 피클코드입니다.</h1>
             </div>
         </div> <!-- end section-header -->
 
-        <div class="row" data-aos="fade-up">
+        <div class="row" >
             <div class="col-full">
                 <p class="lead">
                     피클코드는 최신 IT 트렌드와 효율적인 기술, 그리고 현대적이고 감각적인 디자인을 사용하여 고객이 만족할 수 있는 서비스를 창조하는 팀 입니다.
@@ -75,13 +75,13 @@
         </div> <!-- end about-desc -->
 
         <div class="row">
-                
+
             <div class="about-process process block-1-2 block-tab-full">
 
                 <div class="process__vline-left"></div>
                 <div class="process__vline-right"></div>
 
-                <div class="col-block process__col" data-item="1" data-aos="fade-up">
+                <div class="col-block process__col" data-item="1" >
                     <div class="process__text">
                         <h4>Planning & Consulting</h4>
                         <p>
@@ -90,7 +90,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-block process__col" data-item="2" data-aos="fade-up">
+                <div class="col-block process__col" data-item="2" >
                     <div class="process__text">
                         <h4>Design & Manner</h4>
                         <p>
@@ -100,7 +100,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-block process__col" data-item="3" data-aos="fade-up">
+                <div class="col-block process__col" data-item="3" >
                     <div class="process__text">
                         <h4>Build & Development</h4>
                         <p>
@@ -110,7 +110,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-block process__col" data-item="4" data-aos="fade-up">
+                <div class="col-block process__col" data-item="4" >
                     <div class="process__text">
                         <h4>Launching System</h4>
                         <p>
@@ -131,14 +131,14 @@
     ================================================== -->
     <section id='services' class="s-services light-gray">
 
-        <div class="row section-header" data-aos="fade-up">
+        <div class="row section-header" >
             <div class="col-full">
                 <h3 class="subhead">최선의 파트너가 되어드립니다</h3>
                 <h1 class="display-1">피클코드는 귀하에게 필요한 모든 것이 준비되어 있습니다.</h1>
             </div>
         </div> <!-- end section-header -->
 
-        <div class="row" data-aos="fade-up">
+        <div class="row" >
             <div class="col-full">
                 <p class="lead">
                     고객에게 필요한 업무, 서비스, 플랫폼 등을 각 고객의 특성에 맞추어 정확하게 제공합니다.
@@ -149,7 +149,7 @@
 
         <div class="row services-list block-1-3 block-m-1-2 block-tab-full">
 
-            <div class="col-block service-item " data-aos="fade-up">
+            <div class="col-block service-item " >
                 <div class="service-text">
                     <h3 class="h4">비즈니스 기반 지원</h3>
                     <p>
@@ -159,7 +159,7 @@
                 </div>
             </div>
 
-            <div class="col-block service-item" data-aos="fade-up">
+            <div class="col-block service-item" >
                 <div class="service-text">
                     <h3 class="h4">SEO 서비스</h3>
                     <p>
@@ -169,7 +169,7 @@
                 </div>
             </div>
 
-            <div class="col-block service-item" data-aos="fade-up">
+            <div class="col-block service-item" >
                 <div class="service-text">
                     <h3 class="h4">끈끈한 파트너십</h3>
                     <p>
@@ -178,7 +178,7 @@
                 </div>
             </div>
 
-            <div class="col-block service-item" data-aos="fade-up">
+            <div class="col-block service-item" >
                 <div class="service-text">
                     <h3 class="h4">다양한 부가서비스</h3>
                     <p>
@@ -187,7 +187,7 @@
                 </div>
             </div>
 
-            <div class="col-block service-item" data-aos="fade-up">
+            <div class="col-block service-item" >
                 <div class="service-text">
                     <h3 class="h4">폭넓은 선택</h3>
                     <p>
@@ -196,8 +196,8 @@
                     </p>
                 </div>
             </div>
-    
-            <div class="col-block service-item" data-aos="fade-up">
+
+            <div class="col-block service-item" >
                 <div class="service-text">
                     <h3 class="h4">유연한 커뮤니케이션</h3>
                     <p>
@@ -215,8 +215,8 @@
     <!-- works
     ================================================== -->
     <section id='works' class="s-works">
-                
-        <div class="row section-header" data-aos="fade-up">
+
+        <div class="row section-header" >
             <div class="col-full">
                 <h3 class="subhead">프로젝트 이력</h3>
                 <h1 class="display-1">
@@ -228,7 +228,7 @@
         <div class="row masonry-wrap">
             <div class="masonry">
                 <? foreach ($ports as $item){?>
-                    <div class="masonry__brick" data-aos="fade-up">
+                    <div class="masonry__brick" >
                         <div class="item-folio">
                             <div class="item-folio__thumb">
                                 <a href="<?=$item["imgPath"]?>" class="thumb-link" title="<?=$item["title"]?>" data-size="1050x700">
@@ -258,7 +258,7 @@
             </div> <!-- end masonry -->
         </div> <!-- end masonry-wrap -->
 
-        <div class="testimonials-wrap" data-aos="fade-up">
+        <div class="testimonials-wrap" >
 
             <div class="row">
                 <div class="col-full testimonials-header">
@@ -293,8 +293,8 @@
     ================================================== -->
     <section id="stats" class="s-stats">
 
-        <div class="row stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
-                
+        <div class="row stats block-1-4 block-m-1-2 block-mob-full" >
+
             <div class="col-block stats__col ">
                 <div class="stats__count">129</div>
                 <h5>Awards Received</h5>
@@ -309,7 +309,7 @@
             </div>
             <div class="col-block stats__col">
                 <div class="stats__count">103</div>
-                <h5>Happy Clients</h5> 
+                <h5>Happy Clients</h5>
             </div>
 
         </div> <!-- end stats -->
@@ -321,7 +321,7 @@
     ================================================== -->
     <section id="contact" class="s-contact">
 
-        <div class="row section-header" data-aos="fade-up">
+        <div class="row section-header" >
             <div class="col-full">
                 <h3 class="subhead subhead--light">함께 나아갑니다</h3>
                 <h1 class="display-1 display-1--light">
@@ -343,7 +343,7 @@
 
         <div class="row">
 
-            <!--<div class="col-five tab-full contact-secondary" data-aos="fade-up">-->
+            <!--<div class="col-five tab-full contact-secondary" >-->
                 <!--<h3 class="subhead subhead&#45;&#45;light">Where To Find Us</h3>-->
 
                 <!--<p class="contact-address">-->

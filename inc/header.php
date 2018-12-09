@@ -49,11 +49,21 @@ $comms = $route->getCustomerComment();
         <div class="header-nav__content">
             <h3>PickleCode</h3>
             <ul class="header-nav__list">
-                <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
-                <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
-                <li><a class="smoothscroll"  href="#services" title="services">Services</a></li>
-                <li><a class="smoothscroll"  href="#works" title="works">Works</a></li>
-                <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
+                <? if(basename($_SERVER['PHP_SELF']) == "index.php") {
+                    $FIX_SCROLL = "smoothscroll";
+                    $FIX_PAGE = "";
+                }else{
+                    $FIX_SCROLL = "";
+                    $FIX_PAGE = "index.php";
+                }
+                ?>
+                <li class="current"><a class="<?=$FIX_SCROLL?>"  href="<?=$FIX_PAGE?>#home" title="home">홈</a></li>
+                <li><a class="<?=$FIX_SCROLL?>"  href="<?=$FIX_PAGE?>#about" title="about">소개</a></li>
+                <li><a class="<?=$FIX_SCROLL?>"  href="<?=$FIX_PAGE?>#services" title="services">서비스</a></li>
+                <li><a class="<?=$FIX_SCROLL?>"  href="<?=$FIX_PAGE?>#works" title="works">포트폴리오</a></li>
+                <li><a class="<?=$FIX_SCROLL?>"  href="<?=$FIX_PAGE?>#contact" title="contact">문의</a></li>
+                <li><a class=""  href="faq.php" title="faq">FAQ</a></li>
+                <li><a class=""  href="notice.php" title="notice">공지사항</a></li>
             </ul>
             <p>
                 아삭하고 맛있는 <a href='#0'>PickleCode</a>.
