@@ -42,7 +42,7 @@ define("MSG_INVALID_COMMAND", ERROR."Invalid Route Parameter. [F]");
 define("MSG_CLASS_NOT_EXISTS", ERROR."Invalid Route Parameter. [C]");
 define("MSG_METHOD_NOT_EXISTS", ERROR."Invalid Route Parameter. [M]");
 
-define("KEY_USER_AUTH_INFO", "KEY_USER_AUTH_INFO");
+define("KEY_USER_AUTH_INFO", "PICKLE_OFFICIAL_KEY_USER_AUTH_INFO");
 
 // AES Encryption Key
 define("AES_KEY", "pkcd931018950503");

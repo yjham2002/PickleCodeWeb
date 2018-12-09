@@ -29,8 +29,8 @@ class WebRoute extends Routable {
         }
 
         $startLimit = ($page - 1) * 5;
-        $slt = "SELECT `id`, `title`, `madeBy`, `filePath`, `uptDate`, `regDate`,
-                (SELECT `name` FROM tblUser WHERE `id`=`madeBy` LIMIT 1) AS madeName 
+        $slt = "SELECT `id`, `title`, `madeBy`, `filePath`, `uptDate`, `regDate`, `hit`,
+                (SELECT `name` FROM tblCustomer WHERE `id`=`madeBy` LIMIT 1) AS madeName 
                 FROM tblNotice WHERE {$whereStmt}
                 ORDER BY `regDate` DESC LIMIT {$startLimit}, 5";
         return $this->getArray($slt);
@@ -38,7 +38,7 @@ class WebRoute extends Routable {
 
     function getNotice(){
         $slt = "SELECT *,
-                (SELECT `name` FROM tblUser WHERE `id`=`madeBy` LIMIT 1) AS madeName
+                (SELECT `name` FROM tblCustomer WHERE `id`=`madeBy` LIMIT 1) AS madeName
                 FROM tblNotice WHERE `id`='{$_REQUEST["id"]}'";
         return $this->getRow($slt);
     }

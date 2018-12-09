@@ -108,7 +108,7 @@ $comms = $route->getCustomerComment();
     $(document).ready(function(){
         $(".jLogoutNav").click(function(){
             callJson(
-                "/eVote/shared/public/route.php?F=UserAuthRoute.requestLogout",
+                "/main/shared/public/route.php?F=UserAuthRoute.requestLogout",
                 null, function(data){
                     if(data.returnCode == 1){
                         alert(data.returnMessage);
