@@ -7,7 +7,7 @@ $list = $router->getNoticeList();
     $madeBy = "관리자(".$item["madeName"].")";
     if($item["madeBy"]==0) $madeBy = "관리자";
     ?>
-    <div noticeID="<?=$item["id"]?>" class="col-twelve jDetail text-right" style="padding:10px;font-size:13px;border: 1px #BBBBBB solid;">
+    <div noticeID="<?=$item["id"]?>" class="col-twelve jDetail text-right" style="padding:10px;font-size:13px;border: 1px #BBBBBB solid; margin-bottom: 10px;">
         <div class="text-left">
         <h5 style="margin-top: 12px; font-size: 15px; margin-bottom: 5px;">
             <i class="fa fa-dot-circle"></i>&nbsp;<?=$item["title"]?></h5>

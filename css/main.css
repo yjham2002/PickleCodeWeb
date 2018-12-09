@@ -901,6 +901,20 @@ button.btn--large {
   line-height: 5.6rem !important;
 }
 
+.btn--stroke-p,
+button.btn--stroke-p {
+  background: transparent !important;
+  border: 0.2rem solid #40C1AF;
+  color: #40C1AF;
+}
+
+.btn--stroke-p:hover,
+button.btn--stroke-p:hover {
+    background: transparent !important;
+    border-color: #32806f;
+  color: #40C1AF;
+}
+
 .btn--stroke,
 button.btn--stroke {
   background: transparent !important;
@@ -2265,6 +2279,12 @@ html.no-csstransitions .home-content__main {
   position: relative;
 }
 
+.s-sub{
+    padding-top: 0;
+    padding-bottom: 2rem;
+    background-color: #ffffff;
+    position: relative;
+}
 
 /* ------------------------------------------------------------------- 
  * ## about process

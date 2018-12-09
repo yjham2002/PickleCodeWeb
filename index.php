@@ -24,6 +24,8 @@
                 <h1 class="themeColor">그려냅니다</h1>
 
                 <p>Software Development and Consulting</p>
+                <a class="btn btn--primary" href="query.php">견적문의</a>
+                <a class="btn btn--stroke-p" href="profile.php">대시보드</a>>
             </div> <!-- end home-content__main -->
 
         </div> <!-- end home-content -->

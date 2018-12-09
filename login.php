@@ -34,7 +34,7 @@ if(AuthUtil::isLoggedIn()){
 </script>
     <!-- styles
     ================================================== -->
-    <section id="styles" class="s-about">
+    <section id="styles" class="s-sub">
         <div class="row">
             <div class="col-twelve tab-full">
                 <h3>로그인</h3>

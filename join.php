@@ -55,7 +55,7 @@
 </script>
     <!-- styles
     ================================================== -->
-    <section id="styles" class="s-about" >
+    <section id="styles" class="s-sub" >
         <div class="row">
             <div class="col-twelve tab-full">
                 <h3>간편 회원가입</h3>
