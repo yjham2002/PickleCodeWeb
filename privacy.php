@@ -5,13 +5,14 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>PickleCode - Styles</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- mobile specific metas
-    ================================================== -->
+    <meta name="og:title" content="PickleCode">
+    <meta name="og:description" content="맛있는 코드를 그려내는 피클코드">
+    <meta name="og:image" content="http://picklecode.co.kr/first.png">
+    <title>PickleCode :: 개인정보 처리방침</title>
+    <meta name="description" content="맛있는 코드를 그려내는 피클코드입니다.">
+    <meta name="author" content="PickleCode">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
     <!-- CSS
     ================================================== -->
