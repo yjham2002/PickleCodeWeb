@@ -67,7 +67,7 @@ class UserAuthRoute extends Routable {
             $ins = "INSERT INTO tblCustomer(email, `password`, `name`, `phone`, `company`, `role`, regDate)
                     VALUES ('{$email}', '{$pwd}', '{$name}', '{$phone}', '{$company}', '{$role}', NOW())";
             $this->update($ins);
-            $link = "http://".$_SERVER["HTTP_HOST"]."/main/shared/public/route.php?F=UserAuthRoute.authMail&authCode=".$this->encryptAES256($email);
+            $link = "http://".$_SERVER["HTTP_HOST"]."/main/shared/public/route.php?F=UserAuthRoute.authMail&authCode=".urlencode($this->encryptAES256($email));
             $sender = new EmailSender();
             $sender->sendMailTo(
                 "피클코드 인증 메일입니다.",
