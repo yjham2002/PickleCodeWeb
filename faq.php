@@ -7,7 +7,7 @@ $list = $webInfo->getFaqList();
 ?>
     <!-- styles
     ================================================== -->
-    <section id="styles" class="s-about">
+    <section id="styles" class="s-sub">
         <div class="row narrow section-intro add-bottom">
             <div class="col-twelve tab-full text-left">
                 <h3>FAQ</h3>
