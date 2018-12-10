@@ -845,6 +845,34 @@ input[type="button"].btn--primary:focus {
 }
 
 /**
+btn danger
+ */
+
+.btn.btn--danger,
+button.btn--danger,
+input[type="submit"].btn--danger,
+input[type="reset"].btn--danger,
+input[type="button"].btn--danger {
+  background: #a00000;
+  border-color: #a00000;
+  color: #ffffff;
+}
+
+.btn.btn--danger:hover,
+button.btn--danger:hover,
+input[type="submit"].btn--danger:hover,
+input[type="reset"].btn--danger:hover,
+input[type="button"].btn--danger:hover,
+.btn.btn--danger:focus,
+button.btn--danger:focus,
+input[type="submit"].btn--danger:focus,
+input[type="reset"].btn--danger:focus,
+input[type="button"].btn--danger:focus {
+  background: #6c0000;
+  border-color: #6c0000;
+}
+
+/**
 Collapsible
  */
 /* Style the button that is used to open and close the collapsible content */

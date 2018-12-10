@@ -54,4 +54,36 @@ class AdminRoute extends Routable {
         return $retVal;
     }
 
+    function deleteFaq(){
+        if(AuthUtil::getLoggedInfo()->isAdmin != 1){
+            return self::response(0, "Permission Denied");
+        }
+
+        $id = $_REQUEST["id"];
+        $dlt = "DELETE FROM tblFaq WHERE `id` = '{$id}'";
+        $this->update($dlt);
+        
+        return self::response(1, "삭제되었습니다.");
+    }
+
+    function upsertFaq(){
+        if(AuthUtil::getLoggedInfo()->isAdmin != 1){
+            return self::response(0, "Permission Denied");
+        }
+
+        $id = $_REQUEST["id"];
+        $title = $_REQUEST["title"];
+        $content = $_REQUEST["content"];
+        $ins = "
+                INSERT INTO tblFaq(`id`, `title`, `content`, `regDate`)
+                VALUES ('{$id}', '{$title}', '{$content}', NOW())
+                ON DUPLICATE KEY UPDATE `title` = '{$title}', `content` = '{$content}';
+        ";
+        $this->update($ins);
+        
+        return self::response(1, "저장되었습니다.");
+    }
+
+
+
 }
