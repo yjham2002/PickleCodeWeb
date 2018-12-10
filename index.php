@@ -2,6 +2,7 @@
 <?
     $newHit = $hit + 1;
     $route->setPropertyLoc("WEB_HIT", "#", $newHit);
+    $noticeList = $route->getTopNotice(3);
 ?>
 <script>
     $(document).ready(function(){
@@ -9,6 +10,10 @@
             alert("<?=$_REQUEST["msg"]?>");
             location.href="index.php";
         }
+
+        $(".jNoticeGo").click(function(){
+            location.href="noticeDetail.php?id=" + $(this).attr("nid");
+        });
     });
 </script>
     <!-- home
@@ -34,6 +39,17 @@
             <li><a class="smoothscroll" href="#about">About<span>피클코드를 소개합니다</span></a></li>
             <li><a class="smoothscroll" href="#services">Services<span>최선의 파트너가 되어드립니다</span></a></li>
             <li><a  class="smoothscroll" href="#contact">Contact<span>함께 나아갑니다</span></a></li>
+            <li><a  class="" href="#">NOTICE
+                    <? foreach ($noticeList as $item) {
+                        $dis = $item["title"];
+                        if(strlen($item["title"]) > 10){
+                            $dis = iconv_substr($item["title"], 0, 10, "utf-8")."...";
+                        }
+                        ?>
+                        <span style="font-size:12px;margin-bottom: 10px;"><i class="fa fa-dot-circle"></i>&nbsp;<?=$dis?> - <?=$item["dt"]?> &nbsp;<i nid="<?=$item["id"]?>" class="jNoticeGo fa fa-sign-in-alt"></i></span>
+                        <?
+                    }?>
+                </a></li>
         </ul> <!-- end home-sidelinks -->
 
         <ul class="home-social">

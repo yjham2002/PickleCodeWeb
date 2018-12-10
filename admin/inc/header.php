@@ -11,7 +11,7 @@ $hit = $route->getProperty("WEB_HIT");
 $uRoute = new UserAuthRoute();
 $currentUser = $uRoute->getUser(AuthUtil::getLoggedInfo()->id);
 if(!AuthUtil::isLoggedIn() || $currentUser["isAdmin"] != 1){
-    echo "<script>alert('접근 권한이 없습니다.'); history.back();</script>";
+    echo "<script>alert('접근 권한이 없습니다.'); location.href='../index.php';</script>";
 }
 
 ?>

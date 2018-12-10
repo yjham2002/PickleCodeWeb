@@ -48,6 +48,13 @@ class WebRoute extends Routable {
         return $this->getArray($slt);
     }
 
+    function getTopNotice($cnt){
+        $slt = "SELECT `id`, `title`, DATE(`regDate`) AS dt 
+                FROM tblNotice
+                ORDER BY `regDate` DESC LIMIT {$cnt}";
+        return $this->getArray($slt);
+    }
+
     function saveQuery(){
         $userId = $_REQUEST["userId"];
         $budget = $_REQUEST["budget"];
