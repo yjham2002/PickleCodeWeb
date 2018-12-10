@@ -15,8 +15,9 @@ $hit = $route->getProperty("WEB_HIT");
     <meta name="og:title" content="PickleCode">
     <meta name="og:description" content="맛있는 코드를 그려내는 피클코드">
     <meta name="og:image" content="http://picklecode.co.kr/first.png">
-    <title>PickleCode</title>
+    <title>아삭하고 맛있는 코드 :: 피클코드 - PickleCode</title>
     <meta name="description" content="맛있는 코드를 그려내는 피클코드입니다.">
+    <meta name="keywords" content="소프트웨어, 컴퓨터, 피클코드, S/W, PickleCode, 어플리케이션, 앱, 웹, 홈페이지, 모바일, 모바일웹, 스마트폰, 웹사이트">
     <meta name="author" content="PickleCode">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
