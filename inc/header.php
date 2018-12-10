@@ -12,7 +12,7 @@ $hit = $route->getProperty("WEB_HIT");
 <html class="no-js" lang="ko">
 <head>
     <meta charset="utf-8">
-    <meta name="og:title" content="PickleCode">
+    <meta name="og:title" content="피클코드 - PickleCode">
     <meta name="og:description" content="맛있는 코드를 그려내는 피클코드">
     <meta name="og:image" content="http://picklecode.co.kr/first.png">
     <title>아삭하고 맛있는 코드 :: 피클코드 - PickleCode</title>
