@@ -41,9 +41,6 @@
         </a>
     </div> <!-- end header-logo -->
 
-    <a class="header-menu-toggle" href="#0">
-        <span class="header-menu-icon"></span>
-    </a>
 </header> <!-- end s-header -->
 <!-- Java Script  -->
 <script src="../js/jquery-3.2.1.min.js"></script>
