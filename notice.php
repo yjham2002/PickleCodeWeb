@@ -38,7 +38,7 @@
 </script>
     <!-- styles
     ================================================== -->
-    <section id="styles" class="s-about">
+    <section id="styles" class="s-sub">
         <div class="row add-bottom">
             <div class="col-twelve">
 

@@ -33,15 +33,16 @@ class AdminRoute extends Routable {
         $retVal = array();
         $slt = "SELECT
                 (SELECT COUNT(*) FROM tblAccessHistory) AS cnt_total,
-                (SELECT COUNT(*) FROM tblAccessHistory WHERE fbclid != '') AS cnt_facebook,
+                (SELECT COUNT(*) FROM tblAccessHistory WHERE fbclid != '' OR agent LIKE '%FB_IAB%') AS cnt_facebook,
+                (SELECT COUNT(*) FROM tblAccessHistory WHERE fbclid = '' AND agent LIKE '%FB_IAB%') AS cnt_facebook_iab,
                 (SELECT COUNT(*) FROM tblAccessHistory WHERE userId != 0) AS cnt_login
                 FROM DUAL LIMIT 1;";
 
         $retVal["count"] = $this->getRow($slt);
 
-        $slt = "SELECT accessIp, COUNT(*) AS cnt FROM tblAccessHistory GROUP BY accessIp ORDER BY regDate DESC;";
-
-        $retVal["ip"] = $this->getArray($slt);
+//        $slt = "SELECT accessIp, COUNT(*) AS cnt FROM tblAccessHistory GROUP BY accessIp ORDER BY regDate DESC;";
+//
+//        $retVal["ip"] = $this->getArray($slt);
 
         $slt = "SELECT agent, COUNT(*) AS cnt FROM tblAccessHistory GROUP BY agent ORDER BY regDate DESC;";
 

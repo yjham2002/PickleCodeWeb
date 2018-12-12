@@ -54,12 +54,16 @@ $statData = $route->getStatisticData();
         $total = $statData["count"]["cnt_total"];
         $facebook = $statData["count"]["cnt_facebook"];
         $login = $statData["count"]["cnt_login"];
+        $fb_iab = $statData["count"]["cnt_facebook_iab"];
 
         $ratio1_l = $facebook / $total * 100.0;
         $ratio1_r = ($total - $facebook) / $total * 100.0;
 
         $ratio2_l = $login / $total * 100.0;
         $ratio2_r = ($total - $login) / $total * 100.0;
+
+        $ratio3_l = $fb_iab / $facebook * 100.0;
+        $ratio3_r = ($facebook - $fb_iab) / $facebook * 100.0;
         ?>
 
         var chart1 = new CanvasJS.Chart("chartContainer1", {
@@ -116,11 +120,11 @@ $statData = $route->getStatisticData();
             }]
         });
         chart3.render();
-
+//
         var chart4 = new CanvasJS.Chart("chartContainer4", {
             animationEnabled: true,
             title: {
-                text: "IP별 유입량"
+                text: "페이스북 유입량 비율"
             },
             data: [{
                 type: "pie",
@@ -128,9 +132,8 @@ $statData = $route->getStatisticData();
                 yValueFormatString: "##0.00\"%\"",
                 indexLabel: "{label} {y}",
                 dataPoints: [
-                    <?foreach ($statData["ip"] as $agent){?>
-                    {y: <?=$agent["cnt"]?>, label: "<?=$agent["ip"]?>"},
-                    <?}?>
+                    {y: <?=$ratio3_l?>, label: "Link"},
+                    {y: <?=$ratio3_r?>, label: "IAB"}
                 ]
             }]
         });
