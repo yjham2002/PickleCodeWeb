@@ -27,14 +27,19 @@
                     budget : $(".jMoney").val(),
                     title : $(".jTitle").val(),
                     content : $(".jContent").val(),
-                    classId : $(".jClass").val()
+                    classId : $(".jClass").val(),
+                    queryOf : <?=$_REQUEST["queryOf"]?>
                 }
                 , function(data){
                     if(data.returnCode > 0){
                         alert(data.returnMessage);
                         if(data.returnCode > 1){
                         }else{
-                            location.href="profile.php";
+                            if("<?=$_REQUEST["queryOf"]?>" == ""){
+                                location.href="profile.php";
+                            }else{
+                                location.href="projectDetail.php?id=<?=$_REQUEST["queryOf"]?>";
+                            }
                         }
                     }else{
                         alert("오류가 발생하였습니다.\n관리자에게 문의하세요.");

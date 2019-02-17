@@ -1,7 +1,7 @@
 <? include_once $_SERVER["DOCUMENT_ROOT"]."/main/shared/public/classes/WebRoute.php"; ?>
 <?
 $router = new WebRoute();
-$list = $router->getQueryList();
+$list = $router->getPQueryList($_REQUEST["id"]);
 ?>
 <?foreach($list as $item){
     $bd = $item["budget"] == "" ? "해당없음" : $item["budget"];

@@ -15,6 +15,8 @@ if(!AuthUtil::isLoggedIn()){
             $(tg).fadeIn();
         });
 
+        // Query List
+
         var currentPage = 1;
         var isFinal = false;
 
@@ -45,6 +47,39 @@ if(!AuthUtil::isLoggedIn()){
             var id = $(this).attr("queryId");
             location.href = "queryDetail.php?id=" + id;
         });
+
+        // Project List
+
+        var currentPageP = 1;
+        var isFinalP = false;
+
+        function loadMoreP(page){
+            loadPageInto(
+                "/main/ajaxPages/ajaxProjectList.php",
+                {
+                    page : page,
+                    query : "<?=$_REQUEST["query"]?>"
+                },
+                ".jContainerP",
+                true,
+                function(){
+                    isFinalP = true;
+                    currentPageP--;
+                    $(".jLoadMoreP").hide();
+                }
+            );
+        }
+
+        loadMoreP(currentPageP);
+
+        $(".jLoadMoreP").click(function(){
+            loadMoreP(++currentPageP);
+        });
+
+        $(document).on("click", ".jDetailP", function(){
+            var id = $(this).attr("queryId");
+            location.href = "projectDetail.php?id=" + id;
+        });
     });
 </script>
     <!-- styles
@@ -57,8 +92,9 @@ if(!AuthUtil::isLoggedIn()){
                     AuthUtil::getLoggedInfo()->name."(".AuthUtil::getLoggedInfo()->company.")";
                 ?>
                 <h3>대시보드</h3>
-                <p><b><?=$displayName?></b>님의 정보를 확인합니다.</p>
+                <p><b><?=$displayName?></b>님의 대시보드</p>
                 <a href="#" class="btn btn--primary jShow" vTarget=".jInfo"><i class="fa fa-user">&nbsp;</i>회원정보</a>
+                <a href="#" class="btn btn--primary jShow" vTarget=".jProject"><i class="fa fa-list">&nbsp;</i>프로젝트</a>
                 <a href="#" class="btn btn--primary jShow" vTarget=".jQL"><i class="fa fa-question">&nbsp;</i>문의내역</a>
                 <a href="query.php" class="btn btn--medium btn--pill"><i class="fa fa-plus"></i>&nbsp;문의하기</a>
                 <div class="jInfo jPanel">
@@ -86,6 +122,13 @@ if(!AuthUtil::isLoggedIn()){
                         <input disabled class="full-width jRoleTxt" type="text" value=<?=AuthUtil::getLoggedInfo()->role?> id="jRoleTxt">
                     </div>
                 </form>
+                </div>
+                <div class="jProject jPanel">
+                    <div class="jContainerP" style="padding-bottom: 30px !important;">
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn--stroke jLoadMoreP" style="margin-top: 20px;" ><i class="fa fa-spinner"></i>더보기</button>
+                    </div>
                 </div>
                 <div class="jQL jPanel">
                     <div class="jContainer" style="padding-bottom: 30px !important;">

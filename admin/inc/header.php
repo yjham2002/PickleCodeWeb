@@ -62,6 +62,8 @@ if(!AuthUtil::isLoggedIn() || $currentUser["isAdmin"] != 1){
             <ul class="header-nav__list">
                 <li class="current"><a  href="index.php" title="home">관리자 대시보드</a></li>
                 <li><a  href="faqManage.php" title="faq">FAQ 관리</a></li>
+                <li><a  href="queryManage.php" title="query">문의 관리</a></li>
+                <li><a  href="projectManage.php" title="project">프로젝트 관리</a></li>
             </ul>
             <p>
                 <?

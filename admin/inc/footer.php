@@ -6,7 +6,7 @@
                     사업자 등록 번호 : <a href="#0">260-06-00939</a><br/>
                     문의 : <a href="mailto:<?=$email?>"><?=$email?></a><br/>
                     Copyright &copy; <a href="http://www.picklecode.co.kr">PickleCode</a>,
-                    <script>document.write(new Date().getFullYear());</script>.
+                    2017-<script>document.write(new Date().getFullYear());</script>.
                     All rights reserved.
                     <br/><br/>
                     <a href="../privacy.php" style="font-size: 12px;">개인정보처리방침</a>
