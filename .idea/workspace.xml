@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e50db211-c88b-41ae-bb74-2e890a343a6e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/projectManage.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/queryManage.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/queryManageDetail.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajaxPages/ajaxAdminQueryDetailList.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajaxPages/ajaxAdminQueryList.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajaxPages/ajaxPQueryList.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajaxPages/ajaxProjectList.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projectDetail.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/queryDetail.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/logs.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/inc/footer.php" afterPath="$PROJECT_DIR$/admin/inc/footer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/inc/header.php" afterPath="$PROJECT_DIR$/admin/inc/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajaxPages/ajaxQueryList.php" afterPath="$PROJECT_DIR$/ajaxPages/ajaxQueryList.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/footer.php" afterPath="$PROJECT_DIR$/inc/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profile.php" afterPath="$PROJECT_DIR$/profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/query.php" afterPath="$PROJECT_DIR$/query.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shared/public/classes/WebRoute.php" afterPath="$PROJECT_DIR$/shared/public/classes/WebRoute.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/index.php" afterPath="$PROJECT_DIR$/admin/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shared/public/classes/AdminRoute.php" afterPath="$PROJECT_DIR$/shared/public/classes/AdminRoute.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,18 +17,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="queryManageDetail.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/queryManageDetail.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
-              <folding>
-                <element signature="e#3937#3943#1#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ajaxAdminQueryDetailList.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ajaxPages/ajaxAdminQueryDetailList.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -55,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ajaxProjectList.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ajaxProjectList.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ajaxPages/ajaxProjectList.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+            <state relative-caret-position="399">
+              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -67,78 +43,80 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebRoute.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shared/public/classes/WebRoute.php">
+      <file leaf-file-name="logs.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/logs.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="101" column="31" lean-forward="true" selection-start-line="101" selection-start-column="31" selection-end-line="101" selection-end-column="31" />
+            <state relative-caret-position="164">
+              <caret line="147" column="25" lean-forward="true" selection-start-line="147" selection-start-column="25" selection-end-line="147" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="104" column="21" lean-forward="true" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
               <folding>
-                <marker date="1550393736030" expanded="true" signature="424:588" ph="INSERT INTO tblAccessHistory... " />
-                <marker date="1550393736030" expanded="true" signature="677:725" ph="SELECT * FRO... tblPortfolio" />
-                <marker date="1550393736030" expanded="true" signature="825:968" ph="SELECT * FRO... tblCustomerComment" />
-                <marker date="1550393736030" expanded="true" signature="1076:1117" ph="SELECT * FRO... tblFaq" />
-                <marker date="1550393736030" expanded="true" signature="1441:1716" ph="SELECT `id`,... tblNotice" />
-                <marker date="1550393736030" expanded="true" signature="1813:1935" ph="SELECT `id`,... " />
-                <marker date="1550393736030" expanded="true" signature="2224:2255" ph="UPDATE tblQu... " />
-                <marker date="1550393736030" expanded="true" signature="2224:2264" ph="UPDATE tblQu... " />
-                <marker date="1550393736030" expanded="true" signature="2224:2283" ph="UPDATE tblQu... " />
-                <marker date="1550393736030" expanded="true" signature="2789:3018" ph="INSERT INTO tblQuery... " />
-                <marker date="1550393736030" expanded="true" signature="3149:3194" ph="SELECT * FRO... tblClass" />
-                <marker date="1550393736030" expanded="true" signature="3283:3318" ph="SELECT * FRO... tblQuery" />
-                <marker date="1550393736030" expanded="true" signature="3283:3336" ph="SELECT * FRO... tblQuery" />
-                <marker date="1550393736030" expanded="true" signature="3425:3496" ph="SELECT * FRO... tblProject" />
-                <marker date="1550393736030" expanded="true" signature="3590:3694" ph="SELECT * FRO... tblProjectWork" />
-                <marker date="1550393736030" expanded="true" signature="4267:4390" ph="SELECT * FRO... tblProject" />
-                <marker date="1550393736030" expanded="true" signature="4751:5076" ph="SELECT *, CO... tblQuery" />
-                <marker date="1550393736030" expanded="true" signature="4778:4826" ph="SELECT `name... tblCustomer" />
-                <marker date="1550393736030" expanded="true" signature="4855:4904" ph="SELECT `emai... tblCustomer" />
-                <marker date="1550393736030" expanded="true" signature="5491:5706" ph="SELECT *, (S... tblQuery" />
-                <marker date="1550393736030" expanded="true" signature="6231:6446" ph="SELECT *, (S... tblQuery" />
-                <marker date="1550393736030" expanded="true" signature="6989:7204" ph="SELECT *, (S... tblQuery" />
-                <marker date="1550393736030" expanded="true" signature="7294:7454" ph="SELECT *, (S... tblNotice" />
-                <marker date="1550393736030" expanded="true" signature="7579:7627" ph="SELECT `hit`... tblNotice" />
-                <marker date="1550393736030" expanded="true" signature="7698:7759" ph="UPDATE tblNo... " />
+                <element signature="e#4635#4665#0#HTML" expanded="true" />
+                <element signature="e#4851#4883#0#HTML" expanded="true" />
+                <element signature="e#5095#5123#0#HTML" expanded="true" />
+                <marker date="1550404282257" expanded="false" signature="5408:5422" ph="..." />
+                <marker date="1550404282257" expanded="false" signature="5497:5511" ph="..." />
+                <marker date="1550404282257" expanded="false" signature="5586:5600" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="projectDetail.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projectDetail.php">
+      <file leaf-file-name="AdminRoute.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shared/public/classes/AdminRoute.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1463">
-              <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+            <state relative-caret-position="276">
+              <caret line="43" column="114" lean-forward="true" selection-start-line="43" selection-start-column="114" selection-end-line="43" selection-end-column="114" />
               <folding>
-                <element signature="e#1815#1821#0#HTML" expanded="true" />
-                <element signature="e#1921#1927#1#HTML" expanded="true" />
-                <element signature="e#2070#2076#0#HTML" expanded="true" />
-                <element signature="e#2116#2156#0#HTML" expanded="true" />
-                <element signature="e#2213#2296#0#HTML" expanded="true" />
-                <element signature="e#2378#2396#0#HTML" expanded="true" />
-                <element signature="e#2425#2431#1#HTML" expanded="true" />
-                <element signature="e#2542#2560#0#HTML" expanded="true" />
-                <element signature="e#2889#2929#0#HTML" expanded="true" />
-                <element signature="e#2986#3069#0#HTML" expanded="true" />
-                <element signature="e#3151#3169#0#HTML" expanded="true" />
-                <element signature="e#3197#3203#1#HTML" expanded="true" />
-                <element signature="e#3361#3386#0#HTML" expanded="true" />
-                <element signature="e#3446#3475#0#HTML" expanded="true" />
-                <element signature="e#3815#3855#0#HTML" expanded="true" />
-                <element signature="e#3928#4015#0#HTML" expanded="true" />
-                <element signature="e#4128#4165#0#HTML" expanded="true" />
-                <element signature="e#4283#4301#0#HTML" expanded="true" />
-                <element signature="e#4347#4365#0#HTML" expanded="true" />
-                <element signature="e#4676#4716#0#HTML" expanded="true" />
+                <marker date="1550404162608" expanded="true" signature="566:786" ph="SELECT *, Q.... tblAccessHistory" />
+                <marker date="1550404162608" expanded="true" signature="881:2560" ph="SELECT (SELE... DUAL" />
+                <marker date="1550404162608" expanded="true" signature="906:937" ph="SELECT COUNT... tblProject" />
+                <marker date="1550404162608" expanded="true" signature="1103:1166" ph="SELECT COUNT... tblProject" />
+                <marker date="1550404162608" expanded="true" signature="1199:1231" ph="SELECT COUNT... tblCustomer" />
+                <marker date="1550404162608" expanded="true" signature="1268:1303" ph="SELECT COUNT... tblProjectWork" />
+                <marker date="1550404162608" expanded="true" signature="1336:1381" ph="SELECT COUNT... tblQuery" />
+                <marker date="1550404162608" expanded="true" signature="1415:1460" ph="SELECT COUNT... tblQuery" />
+                <marker date="1550404162608" expanded="true" signature="1494:1539" ph="SELECT COUNT... tblQuery" />
+                <marker date="1550404162608" expanded="true" signature="1653:1726" ph="SELECT IFNUL... tblProject" />
+                <marker date="1550404162608" expanded="true" signature="1931:1968" ph="SELECT COUNT... tblAccessHistory" />
+                <marker date="1550404162608" expanded="true" signature="2118:2199" ph="SELECT COUNT... tblAccessHistory" />
+                <marker date="1550404162608" expanded="true" signature="2442:2521" ph="SELECT COUNT... tblProject" />
+                <marker date="1550404162608" expanded="true" signature="2806:3241" ph="SELECT (SELE... DUAL" />
+                <marker date="1550404162608" expanded="true" signature="2830:2867" ph="SELECT COUNT... tblAccessHistory" />
+                <marker date="1550404162608" expanded="true" signature="3017:3098" ph="SELECT COUNT... tblAccessHistory" />
+                <marker date="1550404162608" expanded="true" signature="3480:3568" ph="SELECT agent... tblAccessHistory" />
+                <marker date="1550404162608" expanded="true" signature="3640:3750" ph="SELECT DATE(... " />
+                <marker date="1550404162608" expanded="true" signature="4032:4071" ph="DELETE FROM " />
+                <marker date="1550404162608" expanded="true" signature="4456:4610" ph="INSERT INTO tblFaq... " />
+                <marker date="1550404162608" expanded="true" signature="4611:4664" ph="UPDATE `titl... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/main.css">
+      <file leaf-file-name="styles.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="1222" column="1" lean-forward="true" selection-start-line="1222" selection-start-column="1" selection-end-line="1222" selection-end-column="1" />
+            <state relative-caret-position="209">
+              <caret line="494" column="36" lean-forward="true" selection-start-line="494" selection-start-column="36" selection-end-line="494" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/inc/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="63" column="34" lean-forward="false" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -180,26 +158,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminRoute.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shared/public/classes/AdminRoute.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding>
-                <marker date="1544600219377" expanded="true" signature="566:786" ph="SELECT *, Q.... tblAccessHistory" />
-                <marker date="1544600219377" expanded="true" signature="1034:1469" ph="SELECT (SELE... DUAL" />
-                <marker date="1544600219377" expanded="true" signature="1058:1095" ph="SELECT COUNT... tblAccessHistory" />
-                <marker date="1544600219377" expanded="true" signature="1245:1326" ph="SELECT COUNT... tblAccessHistory" />
-                <marker date="1544600219377" expanded="true" signature="1708:1796" ph="SELECT agent... tblAccessHistory" />
-                <marker date="1544600219377" expanded="true" signature="1868:1978" ph="SELECT DATE(... " />
-                <marker date="1544600219377" expanded="true" signature="2260:2299" ph="DELETE FROM " />
-                <marker date="1544600219377" expanded="true" signature="2684:2838" ph="INSERT INTO tblFaq... " />
-                <marker date="1544600219377" expanded="true" signature="2839:2892" ph="UPDATE `titl... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -211,10 +169,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>testi</find>
-      <find>h5 he</find>
-      <find>btn--st</find>
-      <find>s-about</find>
       <find>stroke-</find>
       <find>input</find>
       <find>s-sub</find>
@@ -241,6 +195,10 @@
       <find>getProje</find>
       <find>saveQ</find>
       <find>skill</find>
+      <find>stat</find>
+      <find>percent</find>
+      <find>alert</find>
+      <find>$statData[&quot;count&quot;]</find>
     </findStrings>
     <replaceStrings>
       <replace>#40C1AF</replace>
@@ -254,6 +212,7 @@
       <replace>main</replace>
       <replace>tblCustomer</replace>
       <replace>input disabled</replace>
+      <replace>$stat</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -262,7 +221,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/ajaxPages/ajaxRecommendation.php" />
         <option value="$PROJECT_DIR$/shared/bases/Const.php" />
         <option value="$PROJECT_DIR$/shared/public/classes/Routable.php" />
@@ -289,8 +247,6 @@
         <option value="$PROJECT_DIR$/error/inc/header.php" />
         <option value="$PROJECT_DIR$/notice.php" />
         <option value="$PROJECT_DIR$/noticeDetail.php" />
-        <option value="$PROJECT_DIR$/shared/public/classes/AdminRoute.php" />
-        <option value="$PROJECT_DIR$/admin/index.php" />
         <option value="$USER_HOME$/Desktop/language.php" />
         <option value="$USER_HOME$/Desktop/프로젝트/BibleTime/web_backup/pages/supportDetail.php" />
         <option value="$USER_HOME$/Desktop/프로젝트/BibleTime/classes_backup/WebSupport.php" />
@@ -299,7 +255,6 @@
         <option value="$PROJECT_DIR$/inc/header.php" />
         <option value="$PROJECT_DIR$/queryDetail.php" />
         <option value="$PROJECT_DIR$/profile.php" />
-        <option value="$PROJECT_DIR$/admin/inc/header.php" />
         <option value="$PROJECT_DIR$/admin/queryManage.php" />
         <option value="$PROJECT_DIR$/admin/projectManage.php" />
         <option value="$PROJECT_DIR$/ajaxPages/ajaxAdminQueryList.php" />
@@ -313,6 +268,10 @@
         <option value="$PROJECT_DIR$/ajaxPages/ajaxQueryList.php" />
         <option value="$PROJECT_DIR$/ajaxPages/ajaxAdminQueryDetailList.php" />
         <option value="$PROJECT_DIR$/ajaxPages/ajaxProjectList.php" />
+        <option value="$PROJECT_DIR$/admin/inc/header.php" />
+        <option value="$PROJECT_DIR$/admin/logs.php" />
+        <option value="$PROJECT_DIR$/shared/public/classes/AdminRoute.php" />
+        <option value="$PROJECT_DIR$/admin/index.php" />
       </list>
     </option>
   </component>
@@ -407,9 +366,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\main\admin" />
       <recent name="C:\xampp\htdocs\main\ajaxPages" />
       <recent name="C:\xampp\htdocs\main" />
-      <recent name="C:\xampp\htdocs\main\admin" />
       <recent name="C:\xampp\htdocs\main\error" />
       <recent name="C:\xampp\htdocs\main\shared\public\classes" />
     </key>
@@ -457,17 +416,18 @@
       <workItem from="1547082021232" duration="1228000" />
       <workItem from="1547113628273" duration="29000" />
       <workItem from="1547124115868" duration="10000" />
-      <workItem from="1550380179578" duration="11847000" />
+      <workItem from="1550380179578" duration="15295000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55703000" />
+    <option name="totallyTimeSpent" value="59151000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="914" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32516703" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32516703" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -497,7 +457,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/inc/subHeader.php" />
     <entry file="file://$PROJECT_DIR$/admin/inc/adminHeader.php" />
     <entry file="file://$PROJECT_DIR$/admin/inc/adminFooter.php" />
     <entry file="file://$PROJECT_DIR$/shared/bases/utils/AuthUtil.php">
@@ -671,22 +630,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2717">
-          <caret line="143" column="9" lean-forward="true" selection-start-line="143" selection-start-column="9" selection-end-line="143" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/inc/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="65" column="69" lean-forward="false" selection-start-line="65" selection-start-column="69" selection-end-line="65" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/projectManage.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="530">
@@ -761,24 +704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shared/public/classes/AdminRoute.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <marker date="1544600219377" expanded="true" signature="566:786" ph="SELECT *, Q.... tblAccessHistory" />
-            <marker date="1544600219377" expanded="true" signature="1034:1469" ph="SELECT (SELE... DUAL" />
-            <marker date="1544600219377" expanded="true" signature="1058:1095" ph="SELECT COUNT... tblAccessHistory" />
-            <marker date="1544600219377" expanded="true" signature="1245:1326" ph="SELECT COUNT... tblAccessHistory" />
-            <marker date="1544600219377" expanded="true" signature="1708:1796" ph="SELECT agent... tblAccessHistory" />
-            <marker date="1544600219377" expanded="true" signature="1868:1978" ph="SELECT DATE(... " />
-            <marker date="1544600219377" expanded="true" signature="2260:2299" ph="DELETE FROM " />
-            <marker date="1544600219377" expanded="true" signature="2684:2838" ph="INSERT INTO tblFaq... " />
-            <marker date="1544600219377" expanded="true" signature="2839:2892" ph="UPDATE `titl... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/queryManageDetail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -786,14 +711,6 @@
           <folding>
             <element signature="e#3937#3943#1#HTML" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="296" column="59" lean-forward="true" selection-start-line="296" selection-start-column="59" selection-end-line="296" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -912,10 +829,79 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ajaxPages/ajaxProjectList.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        <state relative-caret-position="399">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/inc/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="63" column="34" lean-forward="false" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="494" column="36" lean-forward="true" selection-start-line="494" selection-start-column="36" selection-end-line="494" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/logs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="147" column="25" lean-forward="true" selection-start-line="147" selection-start-column="25" selection-end-line="147" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/public/classes/AdminRoute.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="43" column="114" lean-forward="true" selection-start-line="43" selection-start-column="114" selection-end-line="43" selection-end-column="114" />
+          <folding>
+            <marker date="1550404162608" expanded="true" signature="566:786" ph="SELECT *, Q.... tblAccessHistory" />
+            <marker date="1550404162608" expanded="true" signature="881:2560" ph="SELECT (SELE... DUAL" />
+            <marker date="1550404162608" expanded="true" signature="906:937" ph="SELECT COUNT... tblProject" />
+            <marker date="1550404162608" expanded="true" signature="1103:1166" ph="SELECT COUNT... tblProject" />
+            <marker date="1550404162608" expanded="true" signature="1199:1231" ph="SELECT COUNT... tblCustomer" />
+            <marker date="1550404162608" expanded="true" signature="1268:1303" ph="SELECT COUNT... tblProjectWork" />
+            <marker date="1550404162608" expanded="true" signature="1336:1381" ph="SELECT COUNT... tblQuery" />
+            <marker date="1550404162608" expanded="true" signature="1415:1460" ph="SELECT COUNT... tblQuery" />
+            <marker date="1550404162608" expanded="true" signature="1494:1539" ph="SELECT COUNT... tblQuery" />
+            <marker date="1550404162608" expanded="true" signature="1653:1726" ph="SELECT IFNUL... tblProject" />
+            <marker date="1550404162608" expanded="true" signature="1931:1968" ph="SELECT COUNT... tblAccessHistory" />
+            <marker date="1550404162608" expanded="true" signature="2118:2199" ph="SELECT COUNT... tblAccessHistory" />
+            <marker date="1550404162608" expanded="true" signature="2442:2521" ph="SELECT COUNT... tblProject" />
+            <marker date="1550404162608" expanded="true" signature="2806:3241" ph="SELECT (SELE... DUAL" />
+            <marker date="1550404162608" expanded="true" signature="2830:2867" ph="SELECT COUNT... tblAccessHistory" />
+            <marker date="1550404162608" expanded="true" signature="3017:3098" ph="SELECT COUNT... tblAccessHistory" />
+            <marker date="1550404162608" expanded="true" signature="3480:3568" ph="SELECT agent... tblAccessHistory" />
+            <marker date="1550404162608" expanded="true" signature="3640:3750" ph="SELECT DATE(... " />
+            <marker date="1550404162608" expanded="true" signature="4032:4071" ph="DELETE FROM " />
+            <marker date="1550404162608" expanded="true" signature="4456:4610" ph="INSERT INTO tblFaq... " />
+            <marker date="1550404162608" expanded="true" signature="4611:4664" ph="UPDATE `titl... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="104" column="21" lean-forward="true" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
+          <folding>
+            <element signature="e#4635#4665#0#HTML" expanded="true" />
+            <element signature="e#4851#4883#0#HTML" expanded="true" />
+            <element signature="e#5095#5123#0#HTML" expanded="true" />
+            <marker date="1550404282257" expanded="false" signature="5408:5422" ph="..." />
+            <marker date="1550404282257" expanded="false" signature="5497:5511" ph="..." />
+            <marker date="1550404282257" expanded="false" signature="5586:5600" ph="..." />
           </folding>
         </state>
       </provider>

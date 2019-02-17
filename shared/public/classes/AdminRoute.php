@@ -24,6 +24,29 @@ class AdminRoute extends Routable {
         return $this->getArray($slt);
     }
 
+    function getProjectInfo(){
+        $sql = "SELECT 
+                (SELECT COUNT(*) FROM tblProject) AS totalCount,
+                (SELECT COUNT(*) FROM tblProject WHERE MONTH(startDate)=MONTH(NOW()) AND YEAR(startDate)=YEAR(NOW())) AS thisCount,
+                (SELECT COUNT(*) FROM tblProject WHERE currentLevel=projectLevel) AS doneCount,
+                (SELECT COUNT(*) FROM tblCustomer) AS totalCustomer,
+                (SELECT COUNT(*) FROM tblProjectWork) AS totalWork,
+                (SELECT COUNT(*) FROM tblQuery WHERE isReply=0) AS totalQuery,
+                (SELECT COUNT(*) FROM tblQuery WHERE isReply=1) AS totalReply,
+                (SELECT COUNT(*) FROM tblQuery WHERE queryOf=0) AS generalQuery,
+                (SELECT COUNT(*) FROM tblQuery WHERE queryOf!=0) AS proQuery,
+                (SELECT IFNULL((SUM(currentLevel) / SUM(projectLevel)), 0) FROM tblProject) AS prRatio,
+                (SELECT IFNULL((SUM(currentLevel) / SUM(projectLevel)), 0) FROM tblProject WHERE MONTH(startDate)=MONTH(NOW()) AND YEAR(startDate)=YEAR(NOW())) AS thisRatio,
+                (SELECT COUNT(*) FROM tblAccessHistory) AS cnt_total,
+                (SELECT COUNT(*) FROM tblAccessHistory WHERE fbclid != '' OR agent LIKE '%FB_IAB%') AS cnt_facebook,
+                (SELECT COUNT(*) FROM tblAccessHistory WHERE fbclid = '' AND agent LIKE '%FB_IAB%') AS cnt_facebook_iab,
+                (SELECT COUNT(*) FROM tblAccessHistory WHERE userId != 0) AS cnt_login,
+                (SELECT COUNT(*) FROM tblProject WHERE DATE(regDate) >= DATE(NOW() - INTERVAL 3 DAY)) AS recentPr,
+                (SELECT COUNT(*) FROM tblProject WHERE DATEDIFF(DATE(endDate), DATE(NOW())) <= 3) AS recentEx
+                FROM DUAL";
+        return $this->getRow($sql);
+    }
+
     function getStatisticData(){
 
         if(AuthUtil::getLoggedInfo()->isAdmin != 1){
