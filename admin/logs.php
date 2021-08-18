@@ -114,7 +114,7 @@ $statData = $route->getStatisticData();
                 indexLabel: "{label} {y}",
                 dataPoints: [
                     <?foreach ($statData["agent"] as $agent){?>
-                    {y: <?=$agent["cnt"]?>, label: "<?=$agent["agent"]?>"},
+                    {y: <?=$agent["cnt"]?>, label: "<?=str_replace("\"", "", $agent["agent"])?>"},
                     <?}?>
                 ]
             }]

@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-full cl-copyright">
-                <span>
+                <span style="font-size: 11pt;">
                     대표자 : <a href="#0">함의진</a>   |   관리자 : <a href="#0">전세호</a><br/>
                     사업자 등록 번호 : <a href="#0">260-06-00939</a><br/>
                     문의 : <a href="mailto:<?=$email?>"><?=$email?></a><br/>

@@ -6,6 +6,8 @@
 ?>
 <script>
     $(document).ready(function(){
+       $("#vidlogo").play();
+
         if("<?=$_REQUEST["msg"] != ""?>"){
             alert("<?=$_REQUEST["msg"]?>");
             location.href="index.php";
@@ -28,7 +30,7 @@
                 <h1>맛있는 코드를</h1>
                 <h1 class="themeColor">그려냅니다</h1>
 
-                <p>Software Development and Consulting</p>
+                <p>Innovative software and consulting</p>
                 <a class="btn btn--primary" href="query.php">견적문의</a>
                 <a class="btn btn--stroke-p" href="profile.php">대시보드</a>
             </div> <!-- end home-content__main -->
@@ -83,7 +85,8 @@
         <div class="row section-header" >
             <div class="col-full">
                 <h3 class="subhead">피클코드를 소개합니다</h3>
-                <h1 class="display-1">아삭하고 맛있는 코드를 그려내는 피클코드입니다.</h1>
+                <h2 class="display-1">아삭하고 맛있는 코드를 그려내는 피클코드입니다.</h2>
+                <video id="vidlogo" src="images/logo_video.mp4" loop autoplay muted width="100%"/>
             </div>
         </div> <!-- end section-header -->
 
@@ -151,18 +154,18 @@
 
     <!-- services
     ================================================== -->
-    <section id='services' class="s-services light-gray">
+    <section id='services' class="s-services light-green">
 
         <div class="row section-header" >
             <div class="col-full">
-                <h3 class="subhead">최선의 파트너가 되어드립니다</h3>
+                <h3 style="color: white" class="subhead">최선의 파트너가 되어드립니다</h3>
                 <h1 class="display-1">피클코드는 귀하에게 필요한 모든 것이 준비되어 있습니다.</h1>
             </div>
         </div> <!-- end section-header -->
 
         <div class="row" >
             <div class="col-full">
-                <p class="lead">
+                <p style="color: white" class="lead">
                     고객에게 필요한 업무, 서비스, 플랫폼 등을 각 고객의 특성에 맞추어 정확하게 제공합니다.
                     축적된 노하우를 통해 고객의 비즈니스에 가장 정확하고 깐깐한 파트너가 되어드립니다.
                 </p>
@@ -174,7 +177,7 @@
             <div class="col-block service-item " >
                 <div class="service-text">
                     <h3 class="h4">비즈니스 기반 지원</h3>
-                    <p>
+                    <p style="color: white" class="font-nanumL">
                         비즈니스 운영을 하기 위해 필요한 모든 제반사항에 도움을 드립니다.
                         서비스 도메인부터, 서버 임대 등의 기반을 갖추어 드립니다.
                     </p>
@@ -184,7 +187,7 @@
             <div class="col-block service-item" >
                 <div class="service-text">
                     <h3 class="h4">SEO 서비스</h3>
-                    <p>
+                    <p style="color: white" class="font-nanumL">
                         비즈니스를 위해 가장 중요한 것은 마케팅입니다.
                         귀하의 서비스가 알려지기 위해 가장 중요한 첫 단계, SEO(Search Engine Optimization)을 제공합니다.
                     </p>
@@ -194,7 +197,7 @@
             <div class="col-block service-item" >
                 <div class="service-text">
                     <h3 class="h4">끈끈한 파트너십</h3>
-                    <p>
+                    <p style="color: white" class="font-nanumL">
                         귀하의 서비스가 지속적으로 발전하고 이어질 수 있도록 최선의 유지보수를 진행하고 있습니다.
                     </p>
                 </div>
@@ -203,7 +206,7 @@
             <div class="col-block service-item" >
                 <div class="service-text">
                     <h3 class="h4">다양한 부가서비스</h3>
-                    <p>
+                    <p style="color: white" class="font-nanumL">
                         추가적인 기능 혹은 옵션에 대한 요청에 대해 빠르고 정확한 피드백을 드립니다.
                     </p>
                 </div>
@@ -212,7 +215,7 @@
             <div class="col-block service-item" >
                 <div class="service-text">
                     <h3 class="h4">폭넓은 선택</h3>
-                    <p>
+                    <p style="color: white" class="font-nanumL">
                         웹, 앱, 모바일웹, 반응형웹 외의 소프트웨어를 원하시나요?
                         저희는 특수한 알고리즘부터 기계학습까지, 어떠한 환경도 가리지 않습니다.
                     </p>
@@ -222,7 +225,7 @@
             <div class="col-block service-item" >
                 <div class="service-text">
                     <h3 class="h4">유연한 커뮤니케이션</h3>
-                    <p>
+                    <p style="color: white" class="font-nanumL">
                         저희는 어떠한 커뮤니케이션 채널도 가리지 않습니다.
                         모바일 메신져부터 이메일, 유선전화 등 모든 방법으로 커뮤니케이션합니다.
                     </p>
@@ -242,8 +245,9 @@
             <div class="col-full">
                 <h3 class="subhead">프로젝트 이력</h3>
                 <h1 class="display-1">
-                    아삭하고 맛있는 프로젝트 이력을 확인하세요!
+                    아삭하고 맛있는 프로젝트들을 확인하세요!
                 </h1>
+                <img src="images/logo_area.png" width="100%" />
             </div>
         </div> <!-- end section-header -->
 
@@ -340,7 +344,7 @@ if($d_day < 0) $d_day *= -1;
             <div class="col-full">
                 <h3 class="subhead subhead--light">함께 나아갑니다</h3>
                 <h1 class="display-1 display-1--light">
-                    함께 하시겠습니까?<br/>지금 바로 문의주십시오.
+                    여러분들의<br/>문의를 기다립니다.
                 </h1>
             </div>
         </div> <!-- end section-header -->

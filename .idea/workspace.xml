@@ -2,163 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e50db211-c88b-41ae-bb74-2e890a343a6e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/logs.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/inc/header.php" afterPath="$PROJECT_DIR$/admin/inc/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/index.php" afterPath="$PROJECT_DIR$/admin/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shared/public/classes/AdminRoute.php" afterPath="$PROJECT_DIR$/shared/public/classes/AdminRoute.php" />
+      <change afterPath="$PROJECT_DIR$/fonts/NanumSquareB.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/NanumSquareL.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/NanumSquareR.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/logs.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/logs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/hero-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/hero-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ajaxAdminQueryDetailList.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ajaxPages/ajaxAdminQueryDetailList.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="43" lean-forward="true" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-              <folding>
-                <element signature="e#906#912#0#HTML" expanded="true" />
-                <element signature="e#1019#1025#0#HTML" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ajaxProjectList.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ajaxPages/ajaxProjectList.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logs.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/logs.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="147" column="25" lean-forward="true" selection-start-line="147" selection-start-column="25" selection-end-line="147" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="104" column="21" lean-forward="true" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
-              <folding>
-                <element signature="e#4635#4665#0#HTML" expanded="true" />
-                <element signature="e#4851#4883#0#HTML" expanded="true" />
-                <element signature="e#5095#5123#0#HTML" expanded="true" />
-                <marker date="1550404282257" expanded="false" signature="5408:5422" ph="..." />
-                <marker date="1550404282257" expanded="false" signature="5497:5511" ph="..." />
-                <marker date="1550404282257" expanded="false" signature="5586:5600" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminRoute.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shared/public/classes/AdminRoute.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="43" column="114" lean-forward="true" selection-start-line="43" selection-start-column="114" selection-end-line="43" selection-end-column="114" />
-              <folding>
-                <marker date="1550404162608" expanded="true" signature="566:786" ph="SELECT *, Q.... tblAccessHistory" />
-                <marker date="1550404162608" expanded="true" signature="881:2560" ph="SELECT (SELE... DUAL" />
-                <marker date="1550404162608" expanded="true" signature="906:937" ph="SELECT COUNT... tblProject" />
-                <marker date="1550404162608" expanded="true" signature="1103:1166" ph="SELECT COUNT... tblProject" />
-                <marker date="1550404162608" expanded="true" signature="1199:1231" ph="SELECT COUNT... tblCustomer" />
-                <marker date="1550404162608" expanded="true" signature="1268:1303" ph="SELECT COUNT... tblProjectWork" />
-                <marker date="1550404162608" expanded="true" signature="1336:1381" ph="SELECT COUNT... tblQuery" />
-                <marker date="1550404162608" expanded="true" signature="1415:1460" ph="SELECT COUNT... tblQuery" />
-                <marker date="1550404162608" expanded="true" signature="1494:1539" ph="SELECT COUNT... tblQuery" />
-                <marker date="1550404162608" expanded="true" signature="1653:1726" ph="SELECT IFNUL... tblProject" />
-                <marker date="1550404162608" expanded="true" signature="1931:1968" ph="SELECT COUNT... tblAccessHistory" />
-                <marker date="1550404162608" expanded="true" signature="2118:2199" ph="SELECT COUNT... tblAccessHistory" />
-                <marker date="1550404162608" expanded="true" signature="2442:2521" ph="SELECT COUNT... tblProject" />
-                <marker date="1550404162608" expanded="true" signature="2806:3241" ph="SELECT (SELE... DUAL" />
-                <marker date="1550404162608" expanded="true" signature="2830:2867" ph="SELECT COUNT... tblAccessHistory" />
-                <marker date="1550404162608" expanded="true" signature="3017:3098" ph="SELECT COUNT... tblAccessHistory" />
-                <marker date="1550404162608" expanded="true" signature="3480:3568" ph="SELECT agent... tblAccessHistory" />
-                <marker date="1550404162608" expanded="true" signature="3640:3750" ph="SELECT DATE(... " />
-                <marker date="1550404162608" expanded="true" signature="4032:4071" ph="DELETE FROM " />
-                <marker date="1550404162608" expanded="true" signature="4456:4610" ph="INSERT INTO tblFaq... " />
-                <marker date="1550404162608" expanded="true" signature="4611:4664" ph="UPDATE `titl... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/styles.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="494" column="36" lean-forward="true" selection-start-line="494" selection-start-column="36" selection-end-line="494" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/inc/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="63" column="34" lean-forward="false" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ajaxQueryList.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ajaxPages/ajaxQueryList.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h5#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ajaxAdminQueryList.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ajaxPages/ajaxAdminQueryList.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="34" lean-forward="false" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ajaxPQueryList.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ajaxPages/ajaxPQueryList.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="30" column="74" lean-forward="false" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
-              <folding>
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -281,12 +142,12 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
     <option name="width" value="914" />
     <option name="height" value="1047" />
   </component>
+  <component name="ProjectId" id="1wtcs4QDSXwEItBvEQ0TOHdwcxr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -359,35 +220,27 @@
       </pane>
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="NEW_TOOLWINDOW_STRIPE_DEFAULTS" value="true" />
     <property name="SearchEverywhereHistoryKey" value="notice&#9;FILE&#9;file://C:/xampp/htdocs/main/notice.php&#10;faq&#9;FILE&#9;file://C:/xampp/htdocs/main/faq.php&#10;AdminRoute&#9;FILE&#9;file://C:/xampp/htdocs/main/shared/public/classes/AdminRoute.php" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/fonts" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\main\fonts" />
       <recent name="C:\xampp\htdocs\main\admin" />
       <recent name="C:\xampp\htdocs\main\ajaxPages" />
       <recent name="C:\xampp\htdocs\main" />
       <recent name="C:\xampp\htdocs\main\error" />
-      <recent name="C:\xampp\htdocs\main\shared\public\classes" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -416,18 +269,18 @@
       <workItem from="1547082021232" duration="1228000" />
       <workItem from="1547113628273" duration="29000" />
       <workItem from="1547124115868" duration="10000" />
-      <workItem from="1550380179578" duration="15295000" />
+      <workItem from="1550380179578" duration="15414000" />
+      <workItem from="1629281529951" duration="1264000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59151000" />
+    <option name="totallyTimeSpent" value="59270000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="914" height="1047" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32516703" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32516703" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -447,14 +300,18 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/admin/inc/adminHeader.php" />

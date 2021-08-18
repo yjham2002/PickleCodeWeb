@@ -69,9 +69,14 @@ html, body {
   height: 100%;
 }
 
+@font-face {
+  font-family: "nanumR";
+  src: url("../fonts/NanumSquareR.ttf");
+}
+
 body {
   background: #2d2d2d;
-  font-family: "metropolis-regular", sans-serif;
+  font-family: "nanumR", sans-serif;
   font-size: 1.7rem;
   font-style: normal;
   font-weight: normal;
@@ -80,6 +85,21 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.font-nanumR{
+  font-family: "nanumR", sans-serif;
+  font-weight: 300;
+  color: #444444;
+}
+.font-nanumB{
+  font-family: "nanumB", sans-serif;
+  font-weight: 800;
+  color: #444444;
+}.font-nanumL{
+   font-family: "nanumL", sans-serif;
+   font-weight: 300;
+   color: #444444;
+ }
 
 /* ------------------------------------------------------------------- 
  * ## links
@@ -107,7 +127,7 @@ a:active {
  * 
  * ------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "metropolis-semibold", sans-serif;
+  font-family: "nanumB", sans-serif;
   color: #000000;
   font-style: normal;
   font-weight: normal;
@@ -185,26 +205,11 @@ p img {
 }
 
 p.lead {
-  font-family: "metropolis-regular", sans-serif;
-  font-size: 2.4rem;
+  font-family: "nanumR", sans-serif;
+  font-size: 13pt;
   line-height: 1.75;
   margin-bottom: 3.6rem;
   color: rgba(85, 85, 85, 0.95);
-}
-@media only screen and (max-width: 1200px) {
-  p.lead {
-    font-size: 2.2rem;
-  }
-}
-@media only screen and (max-width: 1000px) {
-  p.lead {
-    font-size: 2.1rem;
-  }
-}
-@media only screen and (max-width: 800px) {
-  p.lead {
-    font-size: 1.9rem;
-  }
 }
 
 em, i, strong, b {
@@ -219,7 +224,7 @@ em, i {
 }
 
 strong, b {
-  font-family: "metropolis-semibold", sans-serif;
+  font-family: "nanumB", sans-serif;
   font-weight: normal;
 }
 
@@ -247,7 +252,7 @@ blockquote:before {
 }
 
 blockquote p {
-  font-family: "metropolis-regular", sans-serif;
+  font-family: "nanumR", sans-serif;
   padding: 0;
   font-size: 2.1rem;
   line-height: 1.857;
@@ -256,7 +261,7 @@ blockquote p {
 
 blockquote cite {
   display: block;
-  font-family: "domine-regular", sans-serif;
+  font-family: "nanumR", sans-serif;
   font-size: 1.4rem;
   font-style: normal;
   line-height: 1.5;
@@ -437,7 +442,7 @@ table {
   border-width: 0;
   width: 100%;
   max-width: 100%;
-  font-family: "metropolis-regular", sans-serif;
+  font-family: "nanumR", sans-serif;
 }
 
 th,
@@ -449,7 +454,7 @@ td {
 
 th {
   color: #000000;
-  font-family: "metropolis-semibold", sans-serif;
+  font-family: "nanumB", sans-serif;
   font-weight: normal;
 }
 
@@ -623,7 +628,7 @@ select {
   border: 0;
   outline: none;
   color: #151515;
-  font-family: "metropolis-regular", sans-serif;
+  font-family: "nanumR", sans-serif;
   font-size: 1.5rem;
   line-height: 3rem;
   max-width: 100%;
@@ -700,7 +705,7 @@ select:focus {
 
 label,
 legend {
-  font-family: "metropolis-semibold", sans-serif;
+  font-family: "nanumB", sans-serif;
   font-size: 1.4rem;
   font-weight: normal;
   margin-bottom: 0.9rem;
@@ -717,7 +722,7 @@ input[type="radio"] {
 label > .label-text {
   display: inline-block;
   margin-left: 1rem;
-  font-family: "metropolis-regular", sans-serif;
+  font-family: "nanumR", sans-serif;
   font-weight: normal;
   line-height: inherit;
 }
@@ -783,7 +788,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  font-family: "metropolis-semibold", sans-serif;
+  font-family: "nanumB", sans-serif;
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
@@ -985,7 +990,7 @@ input::-moz-focus-inner {
   position: relative;
   margin-bottom: 3rem;
   border-radius: 3px;
-  font-family: "metropolis-semibold", sans-serif;
+  font-family: "nanumB", sans-serif;
   font-size: 1.5rem;
   line-height: 1.6;
 }
@@ -1158,7 +1163,7 @@ input::-moz-focus-inner {
   display: block;
   margin: 0.6rem 0 0 0;
   font-size: 1.4rem;
-  font-family: "metropolis-regular", sans-serif;
+  font-family: "nanumR", sans-serif;
   color: #626262;
 }
 
@@ -1182,7 +1187,7 @@ input::-moz-focus-inner {
   position: absolute;
   left: 0;
   top: -3rem;
-  font-family: "metropolis-semibold", sans-serif;
+  font-family: "nanumB", sans-serif;
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -1199,7 +1204,7 @@ input::-moz-focus-inner {
   right: 0;
   top: -3.6rem;
   display: block;
-  font-family: "metropolis-regular", sans-serif;
+  font-family: "nanumR", sans-serif;
   color: #ffffff;
   font-size: 1.1rem;
   line-height: 1;
@@ -1292,6 +1297,18 @@ input::-moz-focus-inner {
   max-width: 800px;
 }
 
+.light-green {
+  background:linear-gradient(
+          134deg
+          , rgb(19, 207, 126) -5%, rgb(49, 153, 108) 56%, rgb(16, 130, 98) 56%);;
+}
+
+.light-blue {
+  background:linear-gradient(
+          134deg
+          , rgb(19, 183, 207) -5%, rgb(54, 91, 180) 56%, rgb(54, 91, 180) 56%);;
+}
+
 .light-gray {
   background-color: #f1f1f1;
 }
@@ -1301,8 +1318,8 @@ input::-moz-focus-inner {
  * ## display headings
  * ------------------------------------------------------------------- */
 .display-1 {
-  font-family: "domine-bold", sans-serif;
-  font-size: 6rem;
+  font-family: "nanumR", sans-serif;
+  font-size: 24pt;
   line-height: 1.3;
   letter-spacing: 0;
   color: #000000;
@@ -1315,8 +1332,8 @@ input::-moz-focus-inner {
 }
 
 .subhead {
-  font-family: "metropolis-semibold", sans-serif;
-  font-size: 1.6rem;
+  font-family: "nanumR", sans-serif;
+  font-size: 15pt;
   line-height: 1.3125;
   text-transform: uppercase;
   letter-spacing: 0.25rem;
@@ -1326,60 +1343,6 @@ input::-moz-focus-inner {
 }
 .subhead::before {
   content: "/ ";
-}
-
-/* ------------------------------------------------------------------- 
- * responsive:
- * display headings
- * ------------------------------------------------------------------- */
-@media only screen and (max-width: 1400px) {
-  .display-1 {
-    font-size: 5.6rem;
-  }
-}
-@media only screen and (max-width: 1200px) {
-  .display-1 {
-    font-size: 5.2rem;
-  }
-}
-@media only screen and (max-width: 950px) {
-  .display-1 {
-    font-size: 4.6rem;
-  }
-}
-@media only screen and (max-width: 800px) {
-  .display-1 {
-    font-size: 4.2rem;
-    margin-bottom: 4.2rem;
-  }
-
-  .subhead {
-    font-size: 1.5rem;
-  }
-}
-@media only screen and (max-width: 700px) {
-  .display-1 {
-    font-size: 4rem;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .display-1 {
-    font-size: 3.6rem;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .display-1 {
-    font-size: 3.3rem;
-  }
-
-  .subhead {
-    font-size: 1.4rem;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .display-1 {
-    font-size: 3rem;
-  }
 }
 
 
@@ -1432,7 +1395,7 @@ input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 .header-nav {
   z-index: 900;
-  font-family: "metropolis-regular", sans-serif;
+  font-family: "nanumR", sans-serif;
   font-size: 1.3rem;
   line-height: 1.846;
   padding: 3.6rem 3rem 3.6rem 3.6rem;
@@ -1464,7 +1427,7 @@ input::-moz-focus-inner {
   color: white;
 }
 .header-nav h3 {
-  font-family: "metropolis-semibold", sans-serif;
+  font-family: "nanumB", sans-serif;
   font-size: 11px;
   line-height: 1.363;
   text-transform: uppercase;
@@ -1486,8 +1449,8 @@ input::-moz-focus-inner {
 }
 
 .header-nav__list {
-  font-family: "metropolis-regular", sans-serif;
-  font-size: 1.6rem;
+  font-family: "nanumR", sans-serif;
+  font-size: 12pt;
   margin: 3.6rem 0 3rem 0;
   padding: 0 0 1.8rem 0;
   list-style: none;
@@ -1510,7 +1473,7 @@ input::-moz-focus-inner {
 .header-nav__list a::before {
   content: counter(ctr, decimal-leading-zero) ".";
   counter-increment: ctr;
-  font-family: "metropolis-regular", sans-serif;
+  font-family: "nanumR", sans-serif;
   font-size: 11px;
   color: rgba(255, 255, 255, 0.25);
   -webkit-transition: all 0.5s ease-in-out;
@@ -1616,7 +1579,7 @@ input::-moz-focus-inner {
   width: 48px;
   height: 45px;
   line-height: 45px;
-  font-family: "metropolis-regular", sans-serif;
+  font-family: "nanumR", sans-serif;
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 0.4rem;
@@ -1793,7 +1756,7 @@ input::-moz-focus-inner {
   position: relative;
 }
 .home-content h1 {
-  font-family: "domine-bold", sans-serif;
+  font-family: "nanumR", sans-serif;
   font-size: 9rem;
   line-height: 1.1;
   margin-top: 0;
@@ -1831,7 +1794,7 @@ input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 .home-sidelinks {
   list-style: none;
-  font-family: "metropolis-regular", sans-serif;
+  font-family: "nanumR", sans-serif;
   font-size: 1.4rem;
   line-height: 1.714;
   text-transform: uppercase;
@@ -1875,7 +1838,7 @@ input::-moz-focus-inner {
 }
 .home-sidelinks span {
   display: block;
-  font-family: "metropolis-regular", sans-serif;
+  font-family: "nanumR", sans-serif;
   font-size: 1.5rem;
   line-height: 1.6rem;
   color: rgba(255, 255, 255, 0.5);
@@ -1899,7 +1862,7 @@ input::-moz-focus-inner {
 }
 .home-scroll__text {
   display: inline-block;
-  font-family: "metropolis-semibold", sans-serif;
+  font-family: "nanumB", sans-serif;
   font-size: 11px;
   line-height: 4.8rem;
   text-transform: uppercase;
@@ -1962,7 +1925,7 @@ input::-moz-focus-inner {
   display: none;
 }
 .home-social .home-social-title {
-  font-family: "metropolis-semibold", sans-serif;
+  font-family: "nanumB", sans-serif;
   padding-right: 4rem;
   margin-right: 0.8rem;
   position: relative;
@@ -2350,7 +2313,7 @@ html.no-csstransitions .home-content__main {
 .process__col::before {
   content: attr(data-item);
   display: block;
-  font-family: "metropolis-semibold", sans-serif;
+  font-family: "nanumB", sans-serif;
   font-size: 2.1rem;
   text-align: center;
   color: #ffffff;
@@ -2654,7 +2617,7 @@ html.no-csstransitions .home-content__main {
 
 .item-folio__cat {
   color: black;
-  font-family: "metropolis-regular", sans-serif;
+  font-family: "nanumR", sans-serif;
   font-size: 1.5rem;
   margin-bottom: 0;
 }
@@ -2666,7 +2629,7 @@ html.no-csstransitions .home-content__main {
 .item-folio__project-link {
   z-index: 500;
   display: block;
-  font-family: "metropolis-semibold", sans-serif;
+  font-family: "nanumB", sans-serif;
   font-size: 1.3rem;
   color: #ffffff;
   background-color: #000000;
@@ -2909,7 +2872,7 @@ html.no-csstransitions .home-content__main {
 }
 .testimonials__author span {
   display: block;
-  font-family: "metropolis-regular", sans-serif;
+  font-family: "nanumR", sans-serif;
   font-size: 1.4rem;
   line-height: 1.5;
   color: rgba(85, 85, 85, 0.7);
@@ -3023,7 +2986,7 @@ html.no-csstransitions .home-content__main {
   margin-left: -50px;
 }
 .stats h5 {
-  font-family: "metropolis-regular", sans-serif;
+  font-family: "nanumR", sans-serif;
   font-size: 1.8rem;
   line-height: 1.333;
   color: rgba(255, 255, 255, 0.5);
@@ -3119,7 +3082,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .contact-address {
-  font-family: "metropolis-regular", sans-serif;
+  font-family: "nanumR", sans-serif;
   font-size: 2.8rem;
   line-height: 1.607;
   margin-top: 2.4rem;
@@ -3206,7 +3169,7 @@ html.no-csstransitions .home-content__main {
 }
 .mc-form label {
   color: #ffffff;
-  font-family: "metropolis-semibold", sans-serif;
+  font-family: "nanumB", sans-serif;
   font-size: 1.3rem;
   padding: 0 2rem;
 }
